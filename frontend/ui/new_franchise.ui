@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>371</width>
+    <height>440</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>351</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="10" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_10">
+      <property name="text">
+       <string>Месячный взнос:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_7">
+      <property name="text">
+       <string>Статус:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_8">
+      <property name="text">
+       <string>Начальный взнос:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_9">
+      <property name="text">
+       <string>Процент роялти:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="loginInput_3"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="loginInput_4"/>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="loginInput_5"/>
+    </item>
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="loginInput_2"/>
+    </item>
+    <item row="3" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_3">
+      <property name="text">
+       <string>Эл. почта:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_4">
+      <property name="text">
+       <string>Адрес:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="loginInput_6"/>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLineEdit" name="loginInput_8"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QLineEdit" name="loginInput_7"/>
+    </item>
+    <item row="9" column="2">
+     <widget class="QLineEdit" name="loginInput_10"/>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLineEdit" name="loginInput_9"/>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="log_label">
+      <property name="text">
+       <string>ФИО:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_2">
+      <property name="text">
+       <string>Телефон:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="loginInput"/>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="pas_label">
+      <property name="text">
+       <string>Организация:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_5">
+      <property name="text">
+       <string>Начало действия договора</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="2">
+     <widget class="QLineEdit" name="loginInput_11"/>
+    </item>
+    <item row="6" column="0" colspan="2">
+     <widget class="QLabel" name="log_label_6">
+      <property name="text">
+       <string>Окончание действия договора</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" colspan="3" alignment="Qt::AlignHCenter">
+     <widget class="QDialogButtonBox" name="buttonBoxPrimary">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>23</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="standardButtons">
+       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>loginInput</tabstop>
+  <tabstop>loginInput_4</tabstop>
+  <tabstop>loginInput_5</tabstop>
+  <tabstop>loginInput_3</tabstop>
+  <tabstop>loginInput_2</tabstop>
+  <tabstop>loginInput_6</tabstop>
+  <tabstop>loginInput_7</tabstop>
+  <tabstop>loginInput_8</tabstop>
+  <tabstop>loginInput_9</tabstop>
+  <tabstop>loginInput_10</tabstop>
+  <tabstop>loginInput_11</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

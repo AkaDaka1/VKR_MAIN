@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="db_table">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Database</string>
+    </property>
+    <widget class="QMenu" name="menuAdd">
+     <property name="title">
+      <string>Add</string>
+     </property>
+     <addaction name="actionEmployee"/>
+     <addaction name="actionFranchise_2"/>
+    </widget>
+    <widget class="QMenu" name="menuQuery">
+     <property name="title">
+      <string>Query</string>
+     </property>
+     <addaction name="Employees"/>
+     <addaction name="actionFranchise"/>
+    </widget>
+    <widget class="QMenu" name="menuRemove">
+     <property name="title">
+      <string>Remove</string>
+     </property>
+     <addaction name="actionEmployee_2"/>
+    </widget>
+    <addaction name="menuAdd"/>
+    <addaction name="menuRemove"/>
+    <addaction name="menuQuery"/>
+    <addaction name="actionRefresh"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="Employees">
+   <property name="text">
+    <string>Employee</string>
+   </property>
+  </action>
+  <action name="actionFranchise">
+   <property name="text">
+    <string>Franchise</string>
+   </property>
+  </action>
+  <action name="actionEmployee">
+   <property name="text">
+    <string>Employee</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionEmployee_2">
+   <property name="text">
+    <string>Employee</string>
+   </property>
+  </action>
+  <action name="actionFranchise_2">
+   <property name="text">
+    <string>Franchise</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>db_table</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

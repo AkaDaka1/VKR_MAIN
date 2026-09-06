@@ -1,0 +1,229 @@
+/* ===== Общие настройки ===== */
+* {
+    font-family: "Segoe UI";
+    font-size: 13px;
+    color: #f2f2f2;
+}
+
+/* ===== Основные окна ===== */
+QMainWindow, QDialog {
+    background: qlineargradient(
+        x1:0, y1:0,
+        x2:0, y2:1,
+        stop:0 #1e1f26,
+        stop:1 #2a2d3a
+    );
+}
+
+/* ===== Поля ввода ===== */
+QLineEdit {
+    background-color: #2f3242;
+    border: 1px solid #3a3f55;
+    border-radius: 6px;
+    padding: 6px 10px 6px 8px;
+    min-height: 24px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #5b8cff;
+    background-color: #35384a;
+}
+
+
+/* ===== Кнопки ===== */
+
+QDialogButtonBox#buttonBoxPrimary QPushButton {
+    min-width: 110px;
+    padding: 6px 16px;
+}
+
+QPushButton {
+    background-color: #5b8cff;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+    font-weight: 500;
+    min-height: 30px;
+}
+
+QPushButton:hover {
+    background-color: #6b98ff;
+}
+
+QPushButton:pressed {
+    background-color: #4a79e0;
+}
+
+/* ===== Вторичные кнопки ===== */
+QPushButton#secondary {
+    background-color: transparent;
+    border: 1px solid #5b8cff;
+}
+
+QPushButton#secondary:hover {
+    background-color: rgba(91, 140, 255, 40);
+}
+
+/* ===== Compact top-panel actions ===== */
+QPushButton#topPanelAction {
+    min-height: 22px;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+QFrame#dashboardPanel {
+    background-color: #262a38;
+    border: 1px solid #3a3f55;
+    border-radius: 8px;
+}
+
+QLabel#dashboardTitle {
+    font-size: 13px;
+    font-weight: 700;
+    color: #d7e2ff;
+    padding-right: 8px;
+}
+
+QLabel#dashboardStat {
+    font-size: 12px;
+    color: #e8ecf8;
+}
+
+/* ===== Лейблы ===== */
+QLabel {
+    color: #f2f2f2;
+    min-height: 16px;
+}
+
+QMessageBox QLabel {
+    min-height: 0px;
+}
+
+QMessageBox QLabel#qt_msgboxex_icon_label {
+    min-width: 32px;
+    min-height: 32px;
+}
+
+QLabel#hint {
+    color: #a0a3b1;
+    font-size: 12px;
+}
+
+/* ===== Таблицы ===== */
+QTableWidget {
+    background-color: #2a2d3a;
+    gridline-color: #3a3f55;
+    border-radius: 8px;
+}
+
+QHeaderView::section {
+    background-color: #1e1f26;
+    padding: 6px;
+    border: none;
+}
+
+/* ===== Скроллбар ===== */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #5b8cff;
+    border-radius: 5px;
+}
+
+/* ===== MenuBar (отделён от панели быстрых кнопок) ===== */
+QMenuBar {
+    font-size: 13px;
+    font-weight: 600;
+    background-color: #12141c;
+    color: #e8ecf8;
+    border-bottom: 2px solid #3d4f7a;
+    padding: 2px 6px 4px 6px;
+    spacing: 2px;
+}
+
+QMenuBar::item {
+    padding: 8px 14px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+QMenuBar::item:selected {
+    background-color: rgba(91, 140, 255, 0.22);
+}
+
+QMenuBar::item:pressed {
+    background-color: rgba(91, 140, 255, 0.35);
+}
+
+/* ===== Выпадающие меню ===== */
+QMenu {
+    font-size: 13px;
+    background-color: #1e1f26;
+    border: 1px solid #3a3f55;
+}
+
+QMenu::item {
+    padding: 6px 16px;
+}
+
+QMenu::item:selected {
+    background-color: #5b8cff;
+}
+
+/* ===== ComboBox ===== */
+QComboBox {
+    background-color: #2f3242;
+    border: 1px solid #3a3f55;
+    border-radius: 6px;
+    padding: 6px 30px 6px 8px; /* место под стрелку */
+    min-height: 24px;
+    font-size: 13px;
+}
+
+QComboBox:hover {
+    border: 1px solid #5b8cff;
+}
+
+QComboBox:focus {
+    border: 1px solid #5b8cff;
+    background-color: #35384a;
+}
+
+QComboBox QAbstractItemView {
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+QDateEdit, QDateTimeEdit {
+    background-color: #2f3242;
+    border: 1px solid #3a3f55;
+    border-radius: 6px;
+    padding: 6px 8px;
+    min-height: 24px;
+    font-size: 13px;
+    color: #f2f2f2;
+}
+
+QDateEdit:hover, QDateTimeEdit:hover {
+    border: 1px solid #5b8cff;
+}
+
+QDateEdit:focus, QDateTimeEdit:focus {
+    border: 1px solid #5b8cff;
+    background-color: #35384a;
+}
+
+QDateEdit::drop-down, QDateTimeEdit::drop-down {
+    border-left: 1px solid #3a3f55;
+    width: 22px;
+    background-color: #2a2d3a;
+}
+
+QCalendarWidget QWidget {
+    background-color: #1e1f26;
+    color: #f2f2f2;
+}
